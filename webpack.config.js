@@ -20,11 +20,13 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
+    host: "0.0.0.0",
+    port: 3000,
     historyApiFallback: true,
     contentBase: './',
     watchOptions: {
       aggregateTimeout: 300,
-      poll: 1000
+      poll: true
     }
   }
 };
